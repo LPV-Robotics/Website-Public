@@ -1,0 +1,7 @@
+# Elbe-Robotics Website
+
+*.DS_Store
+*.swp
+*.swo
+.sass-cache/
+node_modules/
