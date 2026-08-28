@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elbe-Robotics — Autonome Robotik für Flächen- & Agrarmanagement</title>
+  <meta name="description" content="Elbe-Robotics entwickelt intelligente, autonome Robotiklösungen für das Flächen- und Agrarmanagement. Wir automatisieren die Aufgaben, die keiner machen möchte.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="Logo_sw.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══ Navigation ═══ -->
+<nav>
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <img src="Logo_sw.svg" alt="Elbe-Robotics Logo">
+      <span>Elbe-Robotics</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#loesung">Lösungen</a></li>
+      <li><a href="#ernte">Ernte</a></li>
+      <li><a href="#flaechen">Flächen</a></li>
+      <li><a href="#reinigung">Reinigung</a></li>
+      <li><a href="#sicherheit">Sicherheit</a></li>
+      <li><a href="#technologie">Technologie</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══ Hero ═══ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Wir automatisieren die Aufgaben,<br>die <span>keiner machen möchte.</span></h1>
+      <p>Elbe-Robotics entwickelt intelligente, autonome Robotiklösungen für das Flächen- und Agrarmanagement – und darüber hinaus.</p>
+      <div class="hero-actions">
+        <div class="btn-dropdown">
+          <button class="btn btn-primary" onclick="this.parentElement.classList.toggle('open')">
+            Unsere Lösungen entdecken ▾
+          </button>
+          <ul class="btn-dropdown-menu">
+            <li><a href="#ernte">🌾 Ernteautomatisierung</a></li>
+            <li><a href="#flaechen">🗺️ Flächenmanagement</a></li>
+            <li><a href="#reinigung">🧹 Reinigung &amp; Pflege</a></li>
+            <li><a href="#sicherheit">🛡️ Sicherheit &amp; Überwachung</a></li>
+          </ul>
+        </div>
+        <a href="#team" class="btn btn-secondary">Team kennenlernen</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img/robot-1.svg" alt="Elbe-Robotics Agrarroboter auf dem Feld">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Solution Overview ═══ -->
+<section class="section section-alt" id="loesung">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-divider"></div>
+      <h2>Unsere Lösungen</h2>
+      <p>Unsere modularen Roboter verbinden autonome Navigation, intelligente Sensorik und eine zentrale Softwareplattform. Vier Einsatzbereiche – eine Plattform.</p>
+    </div>
+    <div class="overview-grid">
+      <a href="#ernte" class="overview-card">
+        <span class="icon">🌾</span>
+        <h3>Ernteautomatisierung</h3>
+        <p>Autonome Ernteprozesse für verschiedene Feldfrüchte – rund um die Uhr.</p>
+      </a>
+      <a href="#flaechen" class="overview-card">
+        <span class="icon">🗺️</span>
+        <h3>Flächenmanagement</h3>
+        <p>Intelligente Überwachung und Kontrolle landwirtschaftlicher und gewerblicher Flächen.</p>
+      </a>
+      <a href="#reinigung" class="overview-card">
+        <span class="icon">🧹</span>
+        <h3>Reinigung &amp; Pflege</h3>
+        <p>Automatisierung wiederkehrender Reinigungs- und Pflegeaufgaben.</p>
+      </a>
+      <a href="#sicherheit" class="overview-card">
+        <span class="icon">🛡️</span>
+        <h3>Sicherheit &amp; Überwachung</h3>
+        <p>Kontinuierliche Überwachung durch intelligente Sensorik und aktives Eingreifen.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Ernteautomatisierung ═══ -->
+<section class="section section-use-case" id="ernte">
+  <div class="container">
+    <div class="use-case">
+      <div class="use-case-image">
+        <img src="img/robot-2.svg" alt="Ernteautomatisierung">
+      </div>
+      <div class="use-case-content">
+        <span class="use-case-label">Einsatzbereich 01</span>
+        <h2>🌾 Ernteautomatisierung</h2>
+        <p>Roboter unterstützen durch automatisierte Ernte verschiedener Feldfrüchte. Mit schonendem Umgang für Pflanzen und Boden – 24/7 einsetzbar und modular für unterschiedliche Kulturen anpassbar.</p>
+        <ul class="use-case-features">
+          <li>Autonome Ernteprozesse</li>
+          <li>Schonender Umgang mit Pflanzen und Boden</li>
+          <li>24/7 einsetzbar</li>
+          <li>Modular für unterschiedliche Kulturen</li>
+          <li>Reduzierung des manuellen Arbeitsaufwands</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Vergleich: Ernteautomatisierung ═══ -->
+<section class="section section-compare" id="vergleich-ernte">
+  <div class="container">
+    <div class="comparison-grid comparison-compact">
+      <div class="compare-card workers">
+        <h3>👷 Manuelle Ernte</h3>
+        <ul>
+          <li>✗ Hohe Personalkosten</li>
+          <li>✗ Saisonale Verfügbarkeit</li>
+          <li>✗ Körperlich anstrengend</li>
+          <li>✗ Nur bei Tageslicht</li>
+        </ul>
+      </div>
+      <div class="compare-card traditional">
+        <h3>🚜 Große Erntemaschinen</h3>
+        <ul>
+          <li>✗ Hohe Anschaffungskosten</li>
+          <li>✗ Bodenverdichtung</li>
+          <li>✗ Für kleine Flächen überdimensioniert</li>
+          <li>✗ Schädigung der Kulturpflanzen</li>
+        </ul>
+      </div>
+      <div class="compare-card elbe">
+        <h3>🤖 Elbe-Robotics</h3>
+        <ul>
+          <li>✓ Geringer Personalbedarf</li>
+          <li>✓ 24/7 einsetzbar</li>
+          <li>✓ Bodenschonende Leichtbauweise</li>
+          <li>✓ Modular &amp; flexibel anpassbar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Flächenmanagement ═══ -->
+<section class="section section-alt section-use-case" id="flaechen">
+  <div class="container">
+    <div class="use-case flipped">
+      <div class="use-case-content">
+        <span class="use-case-label">Einsatzbereich 02</span>
+        <h2>🗺️ Flächenmanagement</h2>
+        <p>Durch autonome Überwachung können landwirtschaftliche und gewerbliche Flächen regelmäßig kontrolliert werden – ohne zusätzliches Personal vor Ort.</p>
+        <ul class="use-case-features">
+          <li>Überwachung von Feldern und Betriebsflächen</li>
+          <li>Erkennung ungewöhnlicher Situationen</li>
+          <li>Kontrolle von Zufahrten und definierten Bereichen</li>
+          <li>Erkennung von Hindernissen oder Beschädigungen</li>
+          <li>Dokumentation von Flächenzuständen</li>
+          <li>Unterstützung bei der Einhaltung von Sicherheitsbereichen</li>
+        </ul>
+      </div>
+      <div class="use-case-image">
+        <img src="img/robot-1.svg" alt="Flächenmanagement">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Vergleich: Flächenmanagement ═══ -->
+<section class="section section-compare" id="vergleich-flaechen">
+  <div class="container">
+    <div class="comparison-grid comparison-compact">
+      <div class="compare-card workers">
+        <h3>👷 Anlagenpersonal</h3>
+        <ul>
+          <li>✗ Steigende Personalkosten</li>
+          <li>✗ Nur zu Arbeitszeiten verfügbar</li>
+          <li>✗ Hoher Organisationsaufwand</li>
+          <li>✗ Unregelmäßige Kontrollintervalle</li>
+        </ul>
+      </div>
+      <div class="compare-card traditional">
+        <h3>📹 Feste Kameras</h3>
+        <ul>
+          <li>✗ Feste Positionen / tote Winkel</li>
+          <li>✗ Keine aktive Intervention</li>
+          <li>✗ Aufwändige Verkabelung</li>
+          <li>✗ Keine Mobilität</li>
+        </ul>
+      </div>
+      <div class="compare-card elbe">
+        <h3>🤖 Elbe-Robotics</h3>
+        <ul>
+          <li>✓ Rund um die Uhr einsetzbar</li>
+          <li>✓ Keine toten Winkel</li>
+          <li>✓ Aktive Meldung bei Ereignissen</li>
+          <li>✓ Flexible &amp; mobile Überwachung</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Reinigung & Pflege ═══ -->
+<section class="section section-use-case" id="reinigung">
+  <div class="container">
+    <div class="use-case">
+      <div class="use-case-image">
+        <img src="img/robot-2.svg" alt="Reinigung und Pflege">
+      </div>
+      <div class="use-case-content">
+        <span class="use-case-label">Einsatzbereich 03</span>
+        <h2>🧹 Reinigung &amp; Pflege</h2>
+        <p>Unsere Robotersysteme können perspektivisch Müll und Verschmutzungen erkennen und aufnehmen, kleinere Hindernisse entfernen sowie Kehraufgaben und die Grünpflege übernehmen.</p>
+        <ul class="use-case-features">
+          <li>Erkennung und Aufnahme von herumliegendem Müll</li>
+          <li>Erkennung von Verschmutzungen</li>
+          <li>Entfernung kleinerer Hindernisse</li>
+          <li>Kehraufgaben</li>
+          <li>Grünpflege</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Vergleich: Reinigung & Pflege ═══ -->
+<section class="section section-compare" id="vergleich-reinigung">
+  <div class="container">
+    <div class="comparison-grid comparison-compact">
+      <div class="compare-card workers">
+        <h3>👷 Reinigungspersonal</h3>
+        <ul>
+          <li>✗ Hohe Personalkosten</li>
+          <li>✗ Monotone, unattraktive Tätigkeit</li>
+          <li>✗ Körperliche Belastung</li>
+          <li>✗ Nicht flächendeckend einsetzbar</li>
+        </ul>
+      </div>
+      <div class="compare-card traditional">
+        <h3>🧽 Kehrmaschinen</h3>
+        <ul>
+          <li>✗ Hohe Anschaffung &amp; Wartung</li>
+          <li>✗ Nur für Straßen geeignet</li>
+          <li>✗ Keine Erkennung von Müll</li>
+          <li>✗ Keine Grünpflege möglich</li>
+        </ul>
+      </div>
+      <div class="compare-card elbe">
+        <h3>🤖 Elbe-Robotics</h3>
+        <ul>
+          <li>✓ Müllerkennung &amp; -aufnahme</li>
+          <li>✓ Kehraufgaben &amp; Grünpflege</li>
+          <li>✓ Rund um die Uhr einsetzbar</li>
+          <li>✓ Flächendeckend &amp; autonom</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Sicherheit & Überwachung ═══ -->
+<section class="section section-alt section-use-case" id="sicherheit">
+  <div class="container">
+    <div class="use-case flipped">
+      <div class="use-case-content">
+        <span class="use-case-label">Einsatzbereich 04</span>
+        <h2>🛡️ Sicherheit &amp; Überwachung</h2>
+        <p>Unsere Maschinen können mit Kameras, LiDAR und weiteren Sensoren ihre Umgebung kontinuierlich erfassen. Ungewöhnliche Ereignisse werden dokumentiert und gemeldet. Die mobile Überwachung reduziert tote Winkel und ermöglicht bei Bedarf aktives Eingreifen.</p>
+        <ul class="use-case-features">
+          <li>Personen oder Fahrzeuge werden erkannt</li>
+          <li>Ungewöhnliche Bewegungen werden festgestellt</li>
+          <li>Ereignisse werden dokumentiert und gemeldet</li>
+          <li>Keine toten Winkel</li>
+          <li>Aktives Eingreifen möglich</li>
+        </ul>
+      </div>
+      <div class="use-case-image">
+        <img src="img/robot-1.svg" alt="Sicherheitsüberwachung">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Vergleich: Sicherheit & Überwachung ═══ -->
+<section class="section section-compare" id="vergleich-sicherheit">
+  <div class="container">
+    <div class="comparison-grid comparison-compact">
+      <div class="compare-card workers">
+        <h3>👷 Sicherheitspersonal</h3>
+        <ul>
+          <li>✗ Hohe Personalkosten</li>
+          <li>✗ Nur zu bestimmten Zeiten</li>
+          <li>✗ Begrenztes Sichtfeld</li>
+          <li>✗ Ermüdung / Unaufmerksamkeit</li>
+        </ul>
+      </div>
+      <div class="compare-card traditional">
+        <h3>📹 Feste Kamerasysteme</h3>
+        <ul>
+          <li>✗ Tote Winkel bei fester Installation</li>
+          <li>✗ Kein aktives Eingreifen</li>
+          <li>✗ Aufwändiges Nachrüsten</li>
+          <li>✗ Falschalarme durch Umwelt</li>
+        </ul>
+      </div>
+      <div class="compare-card elbe">
+        <h3>🤖 Elbe-Robotics</h3>
+        <ul>
+          <li>✓ 360°-Erfassung ohne tote Winkel</li>
+          <li>✓ Aktives Eingreifen möglich</li>
+          <li>✓ Ereignisbasierte Meldungen</li>
+          <li>✓ Flexibel einsetzbar &amp; mobil</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Technology ═══ -->
+<section class="section" id="technologie">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-divider"></div>
+      <h2>Technologie</h2>
+      <p>Robotik trifft intelligente Sensorik – unsere Systeme kombinieren moderne Hardware mit intelligenter Software.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="icon">🤖</div>
+        <h3>Robotik</h3>
+        <p>Autonome, kompakte und modulare Roboterplattformen für unterschiedliche Einsatzbereiche in der Landwirtschaft und darüber hinaus.</p>
+      </div>
+      <div class="tech-card">
+        <div class="icon">🔬</div>
+        <h3>Sensorfusion</h3>
+        <p>Kameras, LiDAR, Infrarotsensorik und weitere Sensoren werden kombiniert, um die Umgebung zuverlässig zu erfassen und zu verstehen.</p>
+      </div>
+      <div class="tech-card">
+        <div class="icon">💻</div>
+        <h3>Softwareplattform</h3>
+        <p>Eine zentrale Plattform ermöglicht die Überwachung, Steuerung und Auswertung aller Robotersysteme – von überall.</p>
+      </div>
+      <div class="tech-card">
+        <div class="icon">📡</div>
+        <h3>Remote Monitoring</h3>
+        <p>Roboter und Flächen können aus der Ferne überwacht werden. Ereignisse, Warnungen und relevante Zustände werden automatisch weitergeleitet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Vision ═══ -->
+<section class="section section-alt" id="vision">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-divider"></div>
+      <h2>Unsere Vision</h2>
+    </div>
+    <div class="vision-block">
+      <p><strong>Europa 2060.</strong> Was wir heute noch aus Science-Fiction-Filmen kennen: Autonome Roboter von Elbe-Robotics kümmern sich um Straßen, Parks und Anlagen. Sie halten Flächen sauber, gepflegt und sicher – zuverlässig, selbstständig und rund um die Uhr.</p>
+      <p style="margin-top: 24px; font-size: 1.3rem; font-weight: 600; color: #2d5a27;">Die Zukunft ist autonom.</p>
+      <p>Wir glauben, dass Roboter nicht den Menschen ersetzen müssen, sondern dort unterstützen sollten, wo Arbeit besonders schwer, monoton oder gefährlich ist.</p>
+      <p><strong>Elbe-Robotics automatisiert die Aufgaben, die keiner machen möchte – damit Menschen sich auf das konzentrieren können, was wirklich wichtig ist.</strong></p>
+      <div class="vision-goals">
+        <div class="goal-item">🌍 Automatisierte Prozesse weltweit</div>
+        <div class="goal-item">🌱 Schonung von Böden und Ressourcen</div>
+        <div class="goal-item">🛡️ Sicherheit &amp; intelligente Überwachung</div>
+        <div class="goal-item">🔧 Vielseitig einsetzbare Roboterplattform</div>
+        <div class="goal-item">🏭 Übertragung auf weitere Branchen</div>
+        <div class="goal-item">👥 Unterstützung von Betrieben &amp; Kommunen</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Team ═══ -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-divider"></div>
+      <h2>Das Team</h2>
+      <p>Fünf Köpfe, eine Mission – wir bringen Robotik aufs Feld.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="img/team-hannes.svg" alt="Hannes Ulrich">
+        <h4>Hannes Ulrich</h4>
+        <p>Projektmanagement<br>CAD-Konstruktion<br>Robotik-Spezialist</p>
+      </div>
+      <div class="team-card">
+        <img src="img/team-lukas.svg" alt="Lukas Pascal Vouilléme">
+        <h4>Lukas Pascal Vouilléme</h4>
+        <p>Softwareentwicklung<br>Systemintegration</p>
+      </div>
+      <div class="team-card">
+        <img src="img/team-rowan.svg" alt="Rowan Mörig">
+        <h4>Rowan Mörig</h4>
+        <p>Softwareentwicklung<br>Systemintegration</p>
+      </div>
+      <div class="team-card">
+        <img src="img/team-aurelie.svg" alt="Aurélie Ade">
+        <h4>Aurélie Ade</h4>
+        <p>Produktdesign<br>Human Factors</p>
+      </div>
+      <div class="team-card">
+        <img src="img/team-felix.svg" alt="Felix Maximilian Kallnischkies">
+        <h4>Felix M. Kallnischkies</h4>
+        <p>Softwareentwicklung<br>IT-Sicherheit</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Footer ═══ -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Elbe-Robotics. Alle Rechte vorbehalten.</p>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ Script ═══ -->
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+  // Close hero dropdown on outside click
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.btn-dropdown.open').forEach(d => {
+      if (!d.contains(e.target)) d.classList.remove('open');
+    });
+  });
+  // Close hero dropdown after selecting an option
+  document.querySelectorAll('.btn-dropdown-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      link.closest('.btn-dropdown').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#1a1a2e"/>
+  <!-- Stars -->
+  <circle cx="100" cy="50" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="200" cy="80" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="350" cy="30" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="500" cy="60" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="650" cy="40" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="750" cy="90" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="50" cy="120" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="300" cy="100" r="1.5" fill="#fff" opacity="0.3"/>
+  <circle cx="600" cy="20" r="1" fill="#fff" opacity="0.5"/>
+  <circle cx="450" cy="90" r="1.5" fill="#fff" opacity="0.3"/>
+  <!-- Ground plane (dark) -->
+  <rect x="0" y="450" width="800" height="150" fill="#16213e"/>
+  <rect x="0" y="448" width="800" height="4" fill="#0f3460" opacity="0.5"/>
+  <!-- Grid lines on ground (tech feel) -->
+  <g opacity="0.08" stroke="#14b8a6" stroke-width="1">
+    <line x1="0" y1="470" x2="800" y2="470"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="530" x2="800" y2="530"/>
+    <line x1="0" y1="560" x2="800" y2="560"/>
+    <line x1="200" y1="450" x2="200" y2="600"/>
+    <line x1="400" y1="450" x2="400" y2="600"/>
+    <line x1="600" y1="450" x2="600" y2="600"/>
+  </g>
+  <!-- Robot main body (angled/modern design) -->
+  <polygon points="320,350 480,350 510,200 290,200" fill="#0f766e" stroke="#14b8a6" stroke-width="2" opacity="0.9"/>
+  <polygon points="330,340 470,340 495,210 305,210" fill="#0d9488"/>
+  <!-- Top module -->
+  <rect x="330" y="170" width="140" height="40" rx="8" fill="#0a2a3a" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="360" y="155" width="80" height="20" rx="10" fill="#0f3460" stroke="#14b8a6" stroke-width="1"/>
+  <!-- Antenna -->
+  <line x1="400" y1="155" x2="400" y2="120" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="400" cy="115" r="5" fill="#e63946"/>
+  <!-- Sensor eyes -->
+  <circle cx="370" cy="250" r="15" fill="#0f3460" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="370" cy="250" r="6" fill="#14b8a6" opacity="0.8"/>
+  <circle cx="430" cy="250" r="15" fill="#0f3460" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="430" cy="250" r="6" fill="#14b8a6" opacity="0.8"/>
+  <!-- LiDAR scan lines -->
+  <g opacity="0.15" stroke="#14b8a6" stroke-width="1">
+    <line x1="370" y1="250" x2="250" y2="180"/>
+    <line x1="430" y1="250" x2="550" y2="180"/>
+    <line x1="370" y1="250" x2="300" y2="300"/>
+    <line x1="430" y1="250" x2="500" y2="300"/>
+  </g>
+  <!-- Side panels / vents -->
+  <rect x="300" y="280" width="20" height="60" rx="3" fill="#0a2a3a" opacity="0.5"/>
+  <rect x="480" y="280" width="20" height="60" rx="3" fill="#0a2a3a" opacity="0.5"/>
+  <!-- Track wheels -->
+  <ellipse cx="270" cy="420" rx="70" ry="30" fill="#333" stroke="#555" stroke-width="3"/>
+  <ellipse cx="270" cy="420" rx="50" ry="18" fill="#444" stroke="#666" stroke-width="2"/>
+  <ellipse cx="530" cy="420" rx="70" ry="30" fill="#333" stroke="#555" stroke-width="3"/>
+  <ellipse cx="530" cy="420" rx="50" ry="18" fill="#444" stroke="#666" stroke-width="2"/>
+  <!-- Track links -->
+  <g stroke="#555" stroke-width="1.5" opacity="0.6">
+    <line x1="200" y1="410" x2="340" y2="410"/>
+    <line x1="200" y1="430" x2="340" y2="430"/>
+    <line x1="460" y1="410" x2="600" y2="410"/>
+    <line x1="460" y1="430" x2="600" y2="430"/>
+  </g>
+  <!-- Robotic arm -->
+  <line x1="510" y1="300" x2="580" y2="250" stroke="#555" stroke-width="12" stroke-linecap="round"/>
+  <line x1="580" y1="250" x2="630" y2="320" stroke="#555" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="580" cy="250" r="8" fill="#777" stroke="#14b8a6" stroke-width="1.5"/>
+  <!-- Gripper -->
+  <path d="M630 310 L640 300 L650 310 L640 320 Z" fill="#666" stroke="#14b8a6" stroke-width="1"/>
+  <path d="M640 300 L650 290 L660 300 L650 310 Z" fill="#666" stroke="#14b8a6" stroke-width="1"/>
+  <!-- Data stream dots -->
+  <g fill="#14b8a6" opacity="0.5">
+    <circle cx="300" cy="180" r="2"/>
+    <circle cx="280" cy="195" r="1.5"/>
+    <circle cx="310" cy="160" r="1.5"/>
+    <circle cx="500" cy="180" r="2"/>
+    <circle cx="520" cy="195" r="1.5"/>
+    <circle cx="490" cy="160" r="1.5"/>
+  </g>
+</svg>

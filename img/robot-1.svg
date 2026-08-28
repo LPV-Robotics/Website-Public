@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#ecf7fa"/>
+  <!-- Ground -->
+  <rect x="0" y="480" width="800" height="120" fill="#0f766e" rx="0"/>
+  <rect x="0" y="480" width="800" height="8" fill="#0f766e"/>
+  <!-- Crop rows -->
+  <g opacity="0.3">
+    <rect x="50" y="420" width="4" height="60" fill="#0d9488" rx="2"/>
+    <rect x="100" y="400" width="4" height="80" fill="#0d9488" rx="2"/>
+    <rect x="150" y="410" width="4" height="70" fill="#0d9488" rx="2"/>
+    <rect x="580" y="420" width="4" height="60" fill="#0d9488" rx="2"/>
+    <rect x="630" y="400" width="4" height="80" fill="#0d9488" rx="2"/>
+    <rect x="680" y="410" width="4" height="70" fill="#0d9488" rx="2"/>
+    <rect x="730" y="415" width="4" height="65" fill="#0d9488" rx="2"/>
+  </g>
+  <!-- Robot body -->
+  <rect x="250" y="280" width="300" height="200" rx="20" fill="#0f766e" stroke="#0f766e" stroke-width="3"/>
+  <rect x="270" y="300" width="260" height="80" rx="10" fill="#0d9488"/>
+  <!-- Robot head/camera mast -->
+  <rect x="350" y="200" width="100" height="100" rx="50" fill="#555"/>
+  <rect x="365" y="215" width="70" height="70" rx="35" fill="#e8e8e8"/>
+  <circle cx="400" cy="245" r="20" fill="#222" opacity="0.15"/>
+  <!-- LiDAR on top -->
+  <rect x="370" y="180" width="60" height="25" rx="5" fill="#444"/>
+  <circle cx="400" cy="172" r="15" fill="#e63946" opacity="0.8"/>
+  <circle cx="400" cy="172" r="6" fill="#fff" opacity="0.6"/>
+  <!-- Sensor bars -->
+  <rect x="280" y="315" width="30" height="6" rx="3" fill="#222" opacity="0.15"/>
+  <rect x="280" y="335" width="30" height="6" rx="3" fill="#222" opacity="0.15"/>
+  <rect x="490" y="315" width="30" height="6" rx="3" fill="#222" opacity="0.15"/>
+  <rect x="490" y="335" width="30" height="6" rx="3" fill="#222" opacity="0.15"/>
+  <!-- Wheels -->
+  <ellipse cx="280" cy="485" rx="45" ry="45" fill="#333"/>
+  <ellipse cx="280" cy="485" rx="30" ry="30" fill="#555"/>
+  <ellipse cx="280" cy="485" rx="15" ry="15" fill="#777"/>
+  <ellipse cx="520" cy="485" rx="45" ry="45" fill="#333"/>
+  <ellipse cx="520" cy="485" rx="30" ry="30" fill="#555"/>
+  <ellipse cx="520" cy="485" rx="15" ry="15" fill="#777"/>
+  <!-- Solar panel on top -->
+  <rect x="300" y="260" width="200" height="15" rx="3" fill="#115e59"/>
+  <rect x="310" y="235" width="180" height="28" rx="4" fill="#115e59" opacity="0.6"/>
+  <!-- LED indicators -->
+  <circle cx="310" cy="310" r="4" fill="#14b8a6"/>
+  <circle cx="330" cy="310" r="4" fill="#14b8a6"/>
+  <circle cx="350" cy="310" r="4" fill="#14b8a6"/>
+  <!-- Front camera -->
+  <circle cx="400" cy="300" r="10" fill="#222" opacity="0.2"/>
+  <circle cx="400" cy="300" r="5" fill="#222" opacity="0.4"/>
+  <!-- Sun -->
+  <circle cx="700" cy="80" r="40" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="700" cy="80" r="30" fill="#fcd34d" opacity="0.8"/>
+</svg>
