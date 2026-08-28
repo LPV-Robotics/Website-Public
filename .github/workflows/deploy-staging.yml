@@ -1,8 +1,8 @@
-name: Deploy production to GitHub Pages
+name: Deploy staging to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [staging]
 
 permissions:
   contents: read
@@ -10,7 +10,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages-prod
+  group: pages-staging
   cancel-in-progress: true
 
 jobs:
@@ -29,8 +29,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
-      url: https://elbe-robotics.de
+      name: staging
+      url: https://staging.elbe-robotics.de
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
