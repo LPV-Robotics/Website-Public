@@ -1,0 +1,30 @@
+name: Promote to Production
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Promote staging → production
+        env:
+          PAT: ${{ secrets.PAT_PRODUCTION }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git remote add staging-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public-Staging.git
+          git remote add production-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public.git
+          git fetch staging-repo main
+          git fetch production-repo main
+          git checkout -B promote production-repo/main
+          git merge --no-ff --strategy-option=theirs staging-repo/main -m "chore: promote staging → production"
+          git push production-repo HEAD:main
