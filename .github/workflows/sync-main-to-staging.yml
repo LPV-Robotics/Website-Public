@@ -1,0 +1,25 @@
+name: Sync main → staging
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync production to staging
+        env:
+          PAT: ${{ secrets.STAGING_PAT }}
+        run: |
+          git remote add main-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public.git
+          git remote add staging-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public-Staging.git
+          git fetch main-repo main
+          git push staging-repo --force FETCH_HEAD:main

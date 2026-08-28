@@ -15,14 +15,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to production repo
+      - name: Promote staging → production
         env:
           PAT: ${{ secrets.PAT_PRODUCTION }}
         run: |
-          git remote add production https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public.git
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git fetch production main
-          git checkout production/main
-          git merge --no-ff --strategy-option=theirs origin/main -m "chore: promote staging → production"
-          git push production HEAD:main
+          git remote add staging-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public-Staging.git
+          git remote add production-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public.git
+          git fetch staging-repo main
+          git fetch production-repo main
+          git checkout -B promote production-repo/main
+          git merge --no-ff --strategy-option=theirs staging-repo/main -m "chore: promote staging → production"
+          git push production-repo HEAD:main
