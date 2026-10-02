@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Promote staging → production
+      - name: Promote staging to production
         env:
           PAT: ${{ secrets.PAT_PRODUCTION }}
         run: |
@@ -26,5 +26,5 @@ jobs:
           git fetch staging-repo main
           git fetch production-repo main
           git checkout -B promote production-repo/main
-          git merge --no-ff --strategy-option=theirs staging-repo/main -m "chore: promote staging → production"
+          git merge --no-ff --strategy-option=theirs staging-repo/main -m "chore: promote staging to production"
           git push production-repo HEAD:main
