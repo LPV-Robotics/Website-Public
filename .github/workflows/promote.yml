@@ -26,5 +26,5 @@ jobs:
           git fetch staging-repo main
           git fetch production-repo main
           git checkout -B promote production-repo/main
-          git merge --no-ff --strategy-option=theirs staging-repo/main -m "chore: promote staging to production"
+          git merge --no-ff --allow-unrelated-histories --strategy-option=theirs staging-repo/main -m "chore: promote staging to production"
           git push production-repo HEAD:main
