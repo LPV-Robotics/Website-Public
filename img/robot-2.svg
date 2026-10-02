@@ -76,4 +76,6 @@
     <circle cx="520" cy="195" r="1.5"/>
     <circle cx="490" cy="160" r="1.5"/>
   </g>
+  <!-- Watermark -->
+  <text x="400" y="555" font-family="Inter, sans-serif" font-size="22" fill="#14b8a6" text-anchor="middle" opacity="0.7" font-weight="600">Platzhalter – bis Gebrauchsmusterschutz</text>
 </svg>
