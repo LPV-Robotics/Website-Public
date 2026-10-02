@@ -19,10 +19,14 @@ jobs:
         env:
           PAT: ${{ secrets.PAT_PRODUCTION }}
         run: |
+          # Store the PAT as git credential for production repo
+          echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
+          git config --global credential.helper store
+
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git remote add staging-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public-Staging.git
-          git remote add production-repo https://x-access-token:${PAT}@github.com/LPV-Robotics/Website-Public.git
+          git remote add staging-repo https://github.com/LPV-Robotics/Website-Public-Staging.git
+          git remote add production-repo https://github.com/LPV-Robotics/Website-Public.git
           git fetch staging-repo main
           git fetch production-repo main
           git checkout -B promote production-repo/main
