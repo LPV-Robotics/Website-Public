@@ -61,6 +61,19 @@ img { max-width: 100%; height: auto; display: block; }
   width: 100%;
   border-radius: 16px;
 }
+.use-case-image {
+  position: relative;
+}
+.image-placeholder {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #e8f4ec;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: #5a7a6a;
+  text-align: center;
+  border: 1px dashed #7aaf99;
+}
 .use-case-label {
   display: inline-block;
   font-size: 0.8rem;
