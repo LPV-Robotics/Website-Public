@@ -19,9 +19,12 @@ jobs:
         env:
           PAT: ${{ secrets.PAT_PRODUCTION }}
         run: |
-          # Store the PAT as git credential for production repo
-          echo "https://x-access-token:${PAT}@github.com" > ~/.git-credentials
-          git config --global credential.helper store
+          # Remove default GITHUB_TOKEN extraheader that overrides PAT
+          git config --local --unset-all http.https://github.com/.extraheader || true
+
+          # Configure PAT auth for production repo
+          git config --global credential.https://github.com.username x-access-token
+          git config --global credential.https://github.com.helper "!f() { echo password=${PAT}; }; f"
 
           git config user.name "github-actions"
           git config user.email "actions@github.com"
